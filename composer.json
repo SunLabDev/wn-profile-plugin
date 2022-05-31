@@ -1,0 +1,27 @@
+{
+    "name": "sunlab/wn-profile-plugin",
+    "type": "winter-plugin",
+    "description": "Frontend User's profile plugin for WinterCMS",
+    "homepage": "https://github.com/sunlabdev/wn-profile-plugin",
+    "keywords": ["winter cms", "winter", "plugin", "profile"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Romain 'Maz' B",
+            "email": "romainmazb@gmail.com",
+            "role": "Original Author"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/sunlabdev/wn-profile-plugin/issues",
+        "source": "https://github.com/sunlabdev/wn-profile-plugin"
+    },
+    "require": {
+        "php": ">=7.0",
+        "composer/installers": "~1.0",
+        "winter/wn-user-plugin": "^2.0"
+    },
+    "extra": {
+        "installer-name": "profile"
+    }
+}

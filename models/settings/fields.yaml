@@ -1,0 +1,52 @@
+fields:
+    profile_fields:
+        type: repeater
+        prompt: sunlab.profile::lang.fields.repeater_prompt
+        form:
+            fields:
+                name:
+                    label: sunlab.profile::lang.fields.name
+                    comment: sunlab.profile::lang.fields.name_comment
+                    span: left
+
+                type:
+                    label: sunlab.profile::lang.fields.type
+                    span: right
+                    type: dropdown
+                    options:
+                        text: text
+                        number: number
+                        password: password
+                        textarea: textarea
+
+                label:
+                    label: sunlab.profile::lang.fields.label
+                    comment: sunlab.profile::lang.fields.label_comment
+                    span: left
+
+                comment:
+                    label: sunlab.profile::lang.fields.comment
+                    span: right
+
+                tab:
+                    label: sunlab.profile::lang.fields.tab
+                    comment: sunlab.profile::lang.fields.tab_comment
+                    span: left
+                    default: sunlab.profile::lang.fields.tab_default
+                    placeholder: sunlab.profile::lang.fields.tab_default
+
+                span:
+                    label: sunlab.profile::lang.fields.span
+                    span: right
+                    type: dropdown
+                    options:
+                        auto: sunlab.profile::lang.fields.span_auto
+                        left: sunlab.profile::lang.fields.span_left
+                        right: sunlab.profile::lang.fields.span_right
+                        full: sunlab.profile::lang.fields.span_full
+
+                required:
+                    label: sunlab.profile::lang.fields.required
+                    span: left
+                    type: switch
+                    comment: sunlab.profile::lang.fields.required_comment
