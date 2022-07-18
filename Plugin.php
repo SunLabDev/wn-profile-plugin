@@ -70,7 +70,7 @@ class Plugin extends PluginBase
         $profileFieldsNames = empty($profileFields) ? [] : array_pluck($profileFields, 'name');
 
         UserModel::extend(static function ($user) use ($profileFieldsNames) {
-            $user->addCasts(['profile_fields' => 'array']);
+            $user->addCasts(['profile_fields' => 'json']);
 
             $user->bindEvent('model.beforeCreate', static function () use ($profileFieldsNames, $user) {
                 $user->profile_fields = empty($profileFieldsNames) ? [] : array_fill_keys($profileFieldsNames, '');
